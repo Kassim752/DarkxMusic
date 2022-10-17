@@ -60,10 +60,13 @@ async def start_(client: Client, message: Message):
     await message.reply_photo(
         random.choice(DARK_IMG),
         caption=f"""**━━━━━━━━━━━━━━━━━
-ʜᴇʟʟᴏ, ɪ ᴀᴍ sᴜᴘᴇʀ ғᴀsᴛ ᴀɴᴅ ɴᴇxᴛ ɢᴇɴᴇʀᴀᴛɪᴏɴ ᴠᴄ ᴘʟᴀʏᴇʀ
-ʙᴏᴛ ᴀɴᴅ ɴᴏ ʟᴀɢ ɪssᴜᴇ ᴡɪᴛʜ ʙᴇsᴛ sᴏᴜɴᴅ ǫᴜᴀʟɪᴛʏ ғᴏʀ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴘs
-ɪғ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ ǫᴜᴇsᴛɪᴏɴs ᴛʜᴇɴ
-ᴅᴍ ᴛᴏ ᴍʏ ᴏᴡɴᴇʀ [sᴜᴍɪᴛ ʏᴀᴅᴀᴠ](https://t.me/Mr_DiSasTer_XD)...
+ʜᴇʏ ʙᴀʙʏ, 🖤
+    ᴛʜɪs ɪs ᴅᴀʀʟᴢᴢ ★ ᴍᴜsɪᴄ​ 🥀
+
+๏ ᴅᴀʀʟᴢᴢ ᴍᴜꜱɪᴄꜱ ᴡɪʟʟ ᴘʟᴀʏ ʟᴀɢ ғʀᴇᴇ
+ᴍusɪᴄ  ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ ʙᴀʙʏ
+๏ ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʜᴇʟᴩ ʙᴜᴛᴛᴏɴ ʙᴇʟᴏᴡ
+ᴛᴏ ɢᴇᴛ ɪɴғᴏʀᴍᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ᴍʏ ᴀʟʟ ᴄᴏᴍᴍᴀɴᴅs.
 ━━━━━━━━━━━━━━━━━━━**""",
     reply_markup=InlineKeyboardMarkup(
     [
@@ -71,8 +74,8 @@ async def start_(client: Client, message: Message):
             InlineKeyboardButton("➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")
         ],
         [
-            InlineKeyboardButton("🛟 sᴜᴘᴘᴏʀᴛ", url="https://t.me/TheSupportBots"),
-            InlineKeyboardButton("🌾 ᴜᴘᴅᴀᴛᴇs", url="https://t.me/TechQuard")
+            InlineKeyboardButton("🛟 sᴜᴘᴘᴏʀᴛ", url="https://t.me/vanakkamda_mapla"),
+            InlineKeyboardButton("🌾 ᴏᴡɴᴇʀ", url="https://t.me/kassim_darlzzz")
         ],
         [
             InlineKeyboardButton("🧰 ᴄᴏᴍᴍᴀɴᴅs", callback_data="help_cmd"),
@@ -84,7 +87,7 @@ async def start_(client: Client, message: Message):
 )
     
     
-@Client.on_message(commandpro(["/start", "/alive", "/repo"]) & filters.group & ~filters.edited)
+@Client.on_message(commandpro(["/start", "/alive"]) & filters.group & ~filters.edited)
 async def start(client: Client, message: Message):
     await message.reply_photo(
         random.choice(DARK_IMG),
@@ -92,8 +95,8 @@ async def start(client: Client, message: Message):
         reply_markup=InlineKeyboardMarkup(
              [
             [
-                InlineKeyboardButton(text="🛟 ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/TheSupportBots"),
-                InlineKeyboardButton(text="🎃 ᴜᴘᴅᴀᴛᴇs", url=f"https://t.me/TechQuard"),
+                InlineKeyboardButton(text="🛟 ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/vanakkamda_mapla"),
+                InlineKeyboardButton(text="🎃 ᴏᴡɴᴇʀ", url=f"https://t.me/kassim_darlzzz"),
             ]
         ]
      ),
@@ -111,12 +114,11 @@ async def ping_pong(client: Client, message: Message):
     reply_markup=InlineKeyboardMarkup(
              [
             [
-                InlineKeyboardButton(text="🛟 ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/TheSupportBots"),
-                InlineKeyboardButton(text="🎃 ᴜᴘᴅᴀᴛᴇs", url=f"https://t.me/TechQuard"),
+                InlineKeyboardButton(text="🛟 ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/vanakkamda_mapla"),
+                InlineKeyboardButton(text="🎃 ᴏᴡɴᴇʀ", url=f"https://t.me/kassim_darlzzz"),
             ],
             [
-                InlineKeyboardButton(text="🔐 ʏᴏᴜᴛᴜʙᴇ", url=f"https://youtube.com/channel/UCtI7hbY-BD7wvuIzoSU0cEw"),
-                InlineKeyboardButton(text="🎓 ᴅᴇᴠᴇᴏᴘᴇʀ", url=f"https://t.me/Mr_DiSasTer_XD"),
+                InlineKeyboardButton(text="🎓 ᴅᴇᴠᴇᴏᴘᴇʀ", url=f"https://t.me/kassim_darlzzz"),
             ]
         ]
      ),
